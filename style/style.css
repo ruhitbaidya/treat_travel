@@ -12,6 +12,7 @@ html {
 body {
   font-family: "Mulish", sans-serif;
 }
+
 /* common color */
 
 :root {
@@ -23,17 +24,23 @@ body {
 }
 
 /* common layout */
-
+.primary-btn {
+  padding: 1.06rem 2.26rem;
+  color: var(--display-color);
+  font-size: 1.02rem;
+  font-weight: 700;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 0.53rem;
+}
 .common-layout {
   max-width: 1170px;
   margin: 0 auto;
 }
-li {
-  /* list-style-type: none; */
-}
+/* li {
+  list-style-type: none;
+} */
 /* start head nav css */
-.header {
-}
 .nav-menu {
   padding: 3.33rem 0;
   display: flex;
@@ -42,6 +49,7 @@ li {
 .logo-part {
   display: flex;
   align-items: center;
+  gap: 0.7rem;
 }
 .logo-part h2 {
   color: var(--heading-color);
@@ -66,8 +74,8 @@ li {
   align-items: center;
   justify-content: end;
 }
-.nav-items li{
-    list-style: none;
+.nav-items li {
+  list-style: none;
 }
 .nav-items li a {
   text-decoration: none;
@@ -101,7 +109,7 @@ li {
   color: var(--display-color);
   font-size: 4.26rem;
   font-weight: 800;
-  margin-bottom:1.6rem;
+  margin-bottom: 1.6rem;
 }
 
 .hero-part p {
@@ -118,44 +126,147 @@ select {
   padding: 1.06rem;
   color: var(--secondary-color);
   font-size: 1.02rem;
-  border:none;
+  border: none;
   border-radius: 0.53rem;
-  width:11.6rem;
+  width: 11.6rem;
 }
 input,
-select:focus{
-    outline: none;
+select:focus {
+  outline: none;
 }
 input::placeholder {
   color: var(--secondary-color);
 }
-.input-field{
-    width:70%;
-    margin: 3.2rem auto 0 auto;
-    display: flex;
-    gap:1.6rem;
-    justify-content: space-between;
-    background-color: rgba(196, 194, 192, 0.39);
-    border-radius: 0.8rem;
+.input-field {
+  width: 70%;
+  margin: 3.2rem auto 0 auto;
+  display: flex;
+  gap: 1.6rem;
+  justify-content: space-between;
+  background-color: rgba(196, 194, 192, 0.39);
+  border-radius: 0.8rem;
 }
 .input-field button {
-  padding: 1.06rem 2.26rem;
-  color: var(--display-color);
-  font-size: 1.02rem;
-  font-weight: 700;
-  background:var(--primary-color);
-  border:none;
-  border-radius: 0.53rem;
 }
 
 /* end hero part css */
 
 /* start popular section css */
 
-.pourpopular-travel{
-    display: flex;
-    padding:6.66rem 0;
-    gap:3.33rem;
+.pourpopular-travel {
+  display: flex;
+  padding: 6.66rem 0;
+  gap: 3.33rem;
 }
-
+.text-content h2 {
+  color: var(--heading-color);
+  font-size: 2.66rem;
+  font-weight: 800;
+}
+.text-content p {
+  margin: 1.6rem 0;
+  font-size: 1.1rem;
+}
+.text-content ul {
+  margin-left: 1.2rem;
+}
+.text-content ul li {
+  margin: 1.6rem 0;
+  font-size: 1.1rem;
+}
 /* End popular section css */
+
+/* start destinations css */
+.destinations {
+  padding: 0 0 100px 0;
+}
+.content-part{
+    text-align: center;
+    margin-bottom:3.2rem;
+}
+.destinations h2 {
+  color: var(--heading-color);
+  font-size: 2.66rem;
+  font-weight: 800;
+}
+.destinations p {
+  margin-top: 1.6rem;
+  color: var(--secondary-color);
+  font-size: 1.06rem;
+  font-weight: 400;
+  line-height: 1.73rem;
+}
+.gallery-section img{
+    width:100%;
+    height:100%;
+}
+.row-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px;
+    padding:10px 0;
+}
+.row-2{
+    display: grid;
+    grid-template-columns: 4fr 5fr 3fr;
+    grid-gap:20px;
+    padding:10px 0
+}
+.row-3{
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    grid-gap:20px;
+    padding:10px 0;
+}
+/* .box-1{
+    grid-column: 1/7;
+    grid-row: 1/2;
+}
+.box-2{
+    grid-column: 7/-1;
+    grid-row:1/2
+}
+.box-3{
+    grid-column: 1/4;
+    grid-row: 2 /3;
+}
+.box-4{
+    grid-column: 5/9;
+    grid-row: 2 /3;
+}
+.box-5{
+    grid-column: 9/-1;
+    grid-row: 3 /4;
+}
+.box-6{
+    grid-column: 1/-1;
+    grid-row: 3 /4;
+}
+.box-7{
+    grid-column: 1/-1;
+    grid-row: 4 /5;
+} 
+
+.row{
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap:20px;
+    grid-template-areas: 
+        'bxone bxone bxone bxone bxone bxone bxtwo bxtwo  bxtwo bxtwo bxtwo bxtwo'
+        ' bxthree bxthree bxthree bxthree bxthree bxthree   bxfour bxfour bxfour bxfour bxfour bxfour'
+        'bxfive      bxfive       bxsix       bxsix       bxsix      bxsix'
+    ;
+} */
+
+.overlay-flex{
+    position: relative;
+}
+.overlay-flex h3{
+    position:absolute;
+    top:50%;
+    left:50%;
+    color:var(--display-color)
+}
+/* End destinations css */
