@@ -29,7 +29,7 @@ body {
   margin: 0 auto;
 }
 li {
-  list-style-type: none;
+  /* list-style-type: none; */
 }
 /* start head nav css */
 .header {
@@ -66,31 +66,44 @@ li {
   align-items: center;
   justify-content: end;
 }
+.nav-items li{
+    list-style: none;
+}
 .nav-items li a {
   text-decoration: none;
   margin-left: 2.9rem;
   color: var(--nav-color);
   font-size: 1.2rem;
 }
+.nav-items li a:hover {
+  color: var(--primary-color);
+}
 /* End head nav css */
 
 /* hero part css */
+.bg-color {
+  padding: 6.66rem 0;
+  background: linear-gradient(
+    180deg,
+    rgba(19, 19, 24, 0.8) 0%,
+    rgba(19, 19, 24, 0) 100%
+  );
+  border-radius: 1rem;
+}
 .hero-part {
-    width: 100%;
-  height: 100%;
+  width: 100%;
   border-radius: 16px;
   background-image: url("../Images/Group\ 13\ \(1\)\ \(1\).png");
-  padding: 6.66rem 0;
+  background-color: #61565677;
   text-align: center;
 }
 .hero-part h1 {
   color: var(--display-color);
   font-size: 4.26rem;
   font-weight: 800;
+  margin-bottom:1.6rem;
 }
-.set-color {
-  background: #000;
-}
+
 .hero-part p {
   color: var(--display-color);
   font-size: 1.06rem;
@@ -103,4 +116,46 @@ li {
 input,
 select {
   padding: 1.06rem;
+  color: var(--secondary-color);
+  font-size: 1.02rem;
+  border:none;
+  border-radius: 0.53rem;
+  width:11.6rem;
 }
+input,
+select:focus{
+    outline: none;
+}
+input::placeholder {
+  color: var(--secondary-color);
+}
+.input-field{
+    width:70%;
+    margin: 3.2rem auto 0 auto;
+    display: flex;
+    gap:1.6rem;
+    justify-content: space-between;
+    background-color: rgba(196, 194, 192, 0.39);
+    border-radius: 0.8rem;
+}
+.input-field button {
+  padding: 1.06rem 2.26rem;
+  color: var(--display-color);
+  font-size: 1.02rem;
+  font-weight: 700;
+  background:var(--primary-color);
+  border:none;
+  border-radius: 0.53rem;
+}
+
+/* end hero part css */
+
+/* start popular section css */
+
+.pourpopular-travel{
+    display: flex;
+    padding:6.66rem 0;
+    gap:3.33rem;
+}
+
+/* End popular section css */
