@@ -1,0 +1,86 @@
+@media (min-width: 992px) {
+  /* .common-layout{
+        padding:0 10px;
+    } */
+}
+
+@media screen and (max-width: 600px) {
+  .common-layout {
+    padding: 0 15px;
+  }
+  .nav-menu{
+    padding:1.5rem 0;
+  }
+  .nav-items {
+    display: none;
+  }
+  .menu-bar {
+    display: block;
+    display: flex;
+    height: 100%;
+    justify-content: end;
+    align-items: center;
+  }
+  .menu-bar i {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .logo-part h2{
+    font-size:1.46rem;
+  }
+  .hero-part h1 {
+    font-size: 1.46rem;
+  }
+  .hero-part p {
+    font-size:0.93;
+  }
+  .input-field{
+    width:80%;
+  }
+  .input-field{
+    flex-direction: column;
+  }
+  input, select {
+    width:100%;
+  }
+  .pourpopular-travel {
+    flex-direction: column;
+  }
+  .rows {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+  " hd " 
+  " hdf "
+  " ld "
+  " ldf "
+  " ldff "
+  " fd "
+  " fdf "
+  } 
+  .row-2 {
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1.6rem;
+    grid-template-areas:
+    "hotel"
+    "locate"
+    "price";
+  }
+  .dicount-1 .card {
+    grid-template-columns: 1fr;
+
+  }
+  .dicount-2 .card {
+    grid-template-columns: 1fr;
+  }
+  .simple-parfect-container {
+    grid-template-columns: 1fr;
+  }
+  .newsletter-section {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+  " rt "
+  " lt ";
+  }
+}

@@ -11,7 +11,9 @@ html {
 body {
   font-family: "Mulish", sans-serif;
 }
-
+.menu-bar{
+  display: none;
+}
 /* common color */
 
 :root {
@@ -101,6 +103,9 @@ body {
   width: 100%;
   border-radius: 16px;
   background-image: url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover;
   background-color: #61565677;
   text-align: center;
 }
@@ -418,6 +423,7 @@ input::placeholder {
 .video-content video {
   border-radius: 1rem;
   height: 100%;
+  width:100%;
 }
 .seemore-button {
   text-align: center;
