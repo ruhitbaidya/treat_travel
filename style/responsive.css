@@ -1,18 +1,23 @@
-@media (min-width: 992px) {
-  /* .common-layout{
-        padding:0 10px;
-    } */
-}
+
 
 @media screen and (max-width: 600px) {
   .common-layout {
     padding: 0 15px;
+  }
+  .all-font-size{
+    font-size:20px !important;
+  }
+  .all-pera{
+    font-size:14px !important;
   }
   .nav-menu{
     padding:1.5rem 0;
   }
   .nav-items {
     display: none;
+  }
+  .hero-part p{
+    padding:0 10px;
   }
   .menu-bar {
     display: block;
@@ -32,19 +37,25 @@
     font-size: 1.46rem;
   }
   .hero-part p {
+    padding:0 20px;
     font-size:0.93;
   }
-  .input-field{
-    width:80%;
-  }
+  .markup-sill {
+    bottom: 16%;}
   .input-field{
     flex-direction: column;
   }
-  input, select {
+  .travelMoment{
+    padding-top:0;
+  }
+  .pourpopular-travel .text-content,
+  .pourpopular-travel .image-content{
     width:100%;
+    align-items: center;
   }
   .pourpopular-travel {
     flex-direction: column;
+    padding:50px 0;
   }
   .rows {
     grid-template-columns: repeat(1, 1fr);
@@ -69,11 +80,13 @@
   }
   .dicount-1 .card {
     grid-template-columns: 1fr;
-
+    padding:0.8rem;
   }
   .dicount-2 .card {
     grid-template-columns: 1fr;
+    padding:0.8rem;
   }
+ 
   .simple-parfect-container {
     grid-template-columns: 1fr;
   }
@@ -83,4 +96,48 @@
   " rt "
   " lt ";
   }
+  .dicount-1 {
+    background-image: url("../Images/Group\ 39.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    border-radius: 1rem;
+    margin: 1.5rem 0;
+  }
+  .shadule {
+    padding: 1.33rem;
+    margin-top:100px;
+  }
+  .image-travel:hover {
+    width: 350px;
+  }
+  .image-content img{
+    width:100%;
+  }
+  .images-part{
+    z-index: -10;
+  }
+  .destinations {
+    padding: 0 0 40px 0;
+  }
+  .simple-perfect {
+    padding: 2.66rem 0;
+  }
+  .text-content,
+.image-content{
+  width:100%;
 }
+}
+@media (min-width: 992px) {
+    .common-layout{
+          padding:0 15px;
+      }
+      .nav-menu{
+        padding:2.5rem 0;
+      }
+      .hero-part h1{
+        font-size:2.34re;
+      }
+      .input-field{
+        width:90%;
+      }
+  }
