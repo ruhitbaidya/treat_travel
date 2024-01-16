@@ -335,7 +335,31 @@ background: rgba(233, 68, 68, 0.05);
 
 /* start discount design css */
 .dicount-1{
-  background-image: url("../Images/Group\ 39.png")
+  background-image: url("../Images/Group\ 39.png");
+  
+}
+.dicount-2{
+  background-image: url("../Images/Group\ 40.png");
+  
+}
+.dicount-1 .card{
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding:3.33rem;
+}
+.dicount-2 .card{
+  
+}
+.shadule{
+  padding:3.33rem;
+  background-color:#fff;
+  border-radius:1rem;
+}
+.shadule h2{
+  margin:1.5rem 0 1rem 0;
+}
+.shadule h4{
+  margin:1rem 0;
 }
 .dicount-2{}
 .dicount-3{}
