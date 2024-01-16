@@ -263,6 +263,7 @@ input::placeholder {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   color: var(--display-color);
   font-size: 2rem;
 }
@@ -287,6 +288,7 @@ input::placeholder {
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+  margin-top:24px;
   margin-bottom: 3rem;
 }
 .row-2 {
@@ -357,14 +359,37 @@ input::placeholder {
 }
 .shadule {
   padding: 3.33rem;
-  background-color: #e7ddddb7;
+  background-color: #ffffffd2;
   border-radius: 1rem;
+}
+.shadule span{
+  color: var(--secondary-color);
+font-size: 16px;
+font-weight: 400;
+margin-right: 24px;
+}
+.shadule p{
+  color: var(--secondary-color);
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+}
+.shadule span i{
+  margin-right:8px;
+  color:var(--primary-color)
 }
 .shadule h2 {
   margin: 1.5rem 0 1rem 0;
+  color: var(--heading-color);
+  font-size: 24px;
+  font-weight: 800;
 }
 .shadule h4 {
   margin: 1rem 0;
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 800;
+  margin: 16px 0 24px 0
 }
 /* end discount design css */
 
@@ -379,6 +404,10 @@ input::placeholder {
 }
 .video-content video {
   border-radius: 1rem;
+}
+.seemore-button{
+  text-align: center;
+  margin-top:62px;
 }
 /* end simple-perfect css*/
 
@@ -432,7 +461,6 @@ line-height: 26px;
   width:100%;
   height:100%
 }
-
 .markup-sill{
   position:absolute;
   bottom:12%;
@@ -497,6 +525,7 @@ footer {
 .our-some-travel img{
   width:100%;
   height:100%;
+  border-radius: 1rem;
 }
 .travelMoment{
   padding:100px 0;
@@ -512,7 +541,7 @@ footer {
 font-size: 16px;
 font-weight: 400;
 line-height: 26px;
-margin:50px 0;
+margin:30px 0;
 }
 /* background: rgba(19, 19, 24, 0.05); */
 /* end footer css end */
