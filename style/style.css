@@ -165,6 +165,7 @@ input::placeholder {
   display: flex;
   padding: 6.66rem 0;
   gap: 3.33rem;
+  align-items: center;
 }
 .pourpopular-travel .text-content,
 .pourpopular-travel .image-content{
@@ -423,6 +424,7 @@ input::placeholder {
   display: grid;
   grid-gap: 1.4rem;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 .video-content {
   position: relative;
@@ -465,6 +467,9 @@ input::placeholder {
 .control-from {
   display: flex;
   flex-direction: column;
+}
+.control-from input:focus{
+  outline:none;
 }
 .from-part h4 {
   color: var(--heading-color);
@@ -563,7 +568,7 @@ footer {
   border-radius: 1rem;
 }
 .travelMoment {
-  padding: 100px 0;
+  padding: 50px 0;
   text-align: center;
 }
 .travelMoment h2 {

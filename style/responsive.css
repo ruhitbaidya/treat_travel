@@ -4,6 +4,9 @@
   .common-layout {
     padding: 0 15px;
   }
+  .bg-color{
+    padding:30px 0;
+  }
   .all-font-size{
     font-size:20px !important;
   }
@@ -34,7 +37,7 @@
     font-size:1.46rem;
   }
   .hero-part h1 {
-    font-size: 1.46rem;
+    font-size: 2rem;
   }
   .hero-part p {
     padding:0 20px;
@@ -104,8 +107,8 @@
     margin: 1.5rem 0;
   }
   .shadule {
-    padding: 1.33rem;
-    margin-top:100px;
+    padding: 1.5rem;
+    margin-top:180px;
   }
   .image-travel:hover {
     width: 350px;
@@ -135,7 +138,7 @@
         padding:2.5rem 0;
       }
       .hero-part h1{
-        font-size:2.34re;
+
       }
       .input-field{
         width:90%;
